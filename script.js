@@ -1,13 +1,12 @@
-var container = document.getElementsByClassName("left");
-var summary = container.document.getElementsByClassName("summary");
+const selectedSummary = document.querySelectorAll('.summary');
 
-
-for (var i = 0; i < summary.length; i++) {
-    summary[i].addEventListener("click", function() {
-        var currentSummary = document.getElementsByClassName("active");
-        currentSummary[0].className = currentSummary[0].className.replace("active", "");
-        this.className += " active";
+selectedSummary.forEach(summary => {
+    summary.addEventListener('click', () => {
+        document.querySelector('.active')?.classList.remove('active');
+        summary.classList.add('active');
     });
-}
+});
+
+ 
 
 

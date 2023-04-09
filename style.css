@@ -96,7 +96,7 @@ details p{
     font-size: 0.9em;
     font-weight: 500;
 }
-.active{
+summary.active{
     color: var(--Text-Very-dark-desaturated-blue);
     font-weight: 700;
 }
